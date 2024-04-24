@@ -72,3 +72,31 @@ futuraFuncao = adicionar;
 futuraFuncao = concatenar; // ERRO!
 ```
 
+## Commands
+### Watch mode
+Utilizando o comando "tsc <file> --watch" o codigo do arquivo em questao vai ser recompilado automaticamente sempre que haver mudancas
+
+### init
+Utilizando o comando "tsc init" sera gerado um arquivo de configuracao do qual indicara que o projeto é escrito em TypeScript, assim quando o comando "tsc --watch" todos os aquivos do diretorio serao recompilado automaticamente
+O arquivo gerado pode ser alterado para configurar o compilador da maneira que melhor agradar os desenvolvedores e o mesmo deve ser gerado no diretorio inicial do projeto
+
+## Settings
+### exclude
+Adicionando a opcao "exclude" faz com que no momento da compilacao alguns arquivos ou diretorios possam ser excluidos
+
+### include
+Adicionando a opcao "include" apenas os arquivos nela descritos serao compilados, automaticamente ignorando todos os outros
+
+### Compiler options
+#### target
+Especifica qual versao do JavaScript tu quer que o codigo seja gerado. Versoes mais antigas do JavaScript garantem que versoes mais antigas de navegadores suportem o codigo
+
+#### declaration and declarationMap
+Sao opcoes utilizadas para criar bibliotecas utilizadas por outras pessoas e ajuda na criacao de um arquivo de manifesto que descreve todos os tipos que tu tem no projeto
+
+#### sourceMap
+Gera arquivos .js.map que permitem o uso do debug dos arquivos em TypeScript diretamente no navegador 
+
+#### noEmitOnError
+Evita que o compilador gere os arquivos em JavaScript caso exista algum error
+
